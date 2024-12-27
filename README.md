@@ -10,5 +10,10 @@ iptables –t nat –A POSTROUTING –s 192.168.1.0/24 –o ens3 –j MASQUERADE
 iptables-save > /etc/sysconfig/iptables
 systemctl restart iptables
 ```
-srv lemp  192.168.0.2/24
+
 srv prometeus 192.168.1.2/24
+
+https://redos.red-soft.ru/base/redos-7_3/7_3-administation/7_3-monitoring/7_3-prometheus-grafana/?nocache=1735301049283
+
+srv lemp  192.168.0.2/24
+
