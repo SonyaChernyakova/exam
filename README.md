@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/6343784d-4d3c-4489-aff8-7da1036bb3f9)
+![image](https://github.com/user-attachments/assets/b01d130a-8cd3-471c-b875-f59757afedb2)
 
 rtr
 ```
@@ -10,4 +10,5 @@ iptables –t nat –A POSTROUTING –s 192.168.1.0/24 –o ens3 –j MASQUERADE
 iptables-save > /etc/sysconfig/iptables
 systemctl restart iptables
 ```
-srv lemp  192.168.0.2
+srv lemp  192.168.0.2/24
+srv prometeus 192.168.1.2/24
